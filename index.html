@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florent Lombard | Page personnelle</title>
+    <title>Florent Lombard | Maître de conférences en Géographie</title>
     <style>
         :root {
             --text-color: #333333;
             --link-color: #0066cc;
             --link-hover: #004499;
-            --bg-sidebar: #f8f9fa;
+            --bg-nav: #f8f9fa;
             --border-color: #e9ecef;
+            --max-width: 900px;
         }
 
         body {
@@ -19,65 +20,88 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+        }
+
+        /* Barre de navigation supérieure */
+        header {
+            background-color: var(--bg-nav);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
         }
 
-        /* Barre latérale de navigation */
-        nav {
-            width: 250px;
-            background-color: var(--bg-sidebar);
-            height: 100vh;
-            position: fixed;
-            padding: 2rem 1.5rem;
-            box-sizing: border-box;
-            border-right: 1px solid var(--border-color);
-        }
-
-        nav h1 {
-            font-size: 1.4rem;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
+        .site-title {
+            font-size: 1.2rem;
             font-weight: 700;
-        }
-
-        nav p {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 2rem;
+            color: var(--text-color);
+            text-decoration: none;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
-        }
-
-        nav ul li {
-            margin-bottom: 0.8rem;
+            display: flex;
+            gap: 1.5rem;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: var(--text-color);
+            color: #555;
             font-weight: 500;
+            padding: 1.2rem 0;
+            display: inline-block;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
         }
 
         nav ul li a:hover {
             color: var(--link-color);
+            border-bottom: 2px solid var(--link-color);
         }
 
-        /* Zone de contenu principal */
+        /* Contenu principal */
         main {
-            margin-left: 250px;
-            padding: 3rem 4rem;
-            max-width: 800px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            box-sizing: border-box;
+        }
+
+        section {
+            scroll-margin-top: 5rem; /* Évite que le menu cache le titre lors du clic */
+            margin-bottom: 3.5rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            font-weight: 400;
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.4rem;
             margin-top: 2.5rem;
+            color: #222;
         }
 
         a {
@@ -95,85 +119,125 @@
         }
 
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
         }
 
-        /* Adaptation pour les écrans de téléphones */
+        .highlight-box {
+            background-color: #fdfdfd;
+            border-left: 3px solid #6c757d;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            body {
+            .nav-container {
                 flex-direction: column;
-            }
-            nav {
-                width: 100%;
-                height: auto;
-                position: relative;
-                border-right: none;
-                border-bottom: 1px solid var(--border-color);
-                padding: 1.5rem;
+                padding: 1rem;
             }
             nav ul {
-                display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 gap: 1rem;
+                margin-top: 1rem;
             }
-            nav ul li {
-                margin-bottom: 0;
+            nav ul li a {
+                padding: 0.5rem 0;
             }
             main {
-                margin-left: 0;
-                padding: 2rem 1.5rem;
+                padding: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Menu latéral (Style Pierre Brigode) -->
-    <nav>
-        <h1>Florent Lombard</h1>
-        <p>Votre Profession / Titre</p>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#projets">Projets & Réalisations</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Barre d'onglets supérieure -->
+    <header>
+        <div class="nav-container">
+            <a href="#accueil" class="site-title">Florent Lombard</a>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#enseignements">Enseignements</a></li>
+                    <li><a href="#encadrements">Encadrements</a></li>
+                    <li><a href="#terrains">Terrains</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- Contenu de la page -->
     <main>
+        
+        <!-- Accueil -->
         <section id="accueil">
             <h1>Florent Lombard</h1>
-            <h3>Présentation générale</h3>
-            <p>Bienvenue sur ma page personnelle. Je partage ici mes travaux, mes projets et mes centres d'intérêt.</p>
-            <p>Vous pouvez modifier ce texte directement pour vous présenter brièvement au public, à la manière d'une biographie professionnelle.</p>
-        </section>
-
-        <section id="parcours">
-            <h2>💼 Mon Parcours</h2>
-            <p>Voici un résumé de mes activités majeures :</p>
+            <p class="subtitle">Maître de conférences en Géographie — Université Aix-Marseille</p>
+            
+            <p>Je suis enseignant-chercheur à l'Université Aix-Marseille. Mes travaux s'inscrivent en <strong>biogéographie</strong> et portent plus particulièrement sur le concept de résilience ainsi que sur l'analyse spatiale des interactions entre nature et sociétés.</p>
+            
+            <p>Pour comprendre la coévolution des liens que les sociétés entretiennent avec leur environnement, ma démarche s'appuie sur le croisement de plusieurs méthodes :</p>
             <ul>
-                <li><strong>Poste actuel (2026)</strong> : Description de votre rôle ou de vos études actuelles.</li>
-                <li><strong>Expérience précédente</strong> : Entreprise ou École, détails de votre mission.</li>
+                <li>La modélisation systémique et l'analyse spatiale quantitative.</li>
+                <li>La télédétection et l'écologie du paysage pour le suivi des dynamiques végétales.</li>
+                <li>Le travail empirique, combinant relevés de terrain (botaniques et biophysiques) et enquêtes de terrain portant sur les usages des acteurs locaux.</li>
             </ul>
         </section>
 
-        <section id="projets">
-            <h2>🚀 Projets & Réalisations</h2>
-            <p>Mes travaux portent principalement sur :</p>
+        <!-- CV -->
+        <section id="cv">
+            <h2>💼 Parcours & CV</h2>
             <ul>
-                <li><strong>Domaine 1</strong> : Explication rapide de vos compétences ou réalisations liées.</li>
-                <li><strong>Domaine 2</strong> : Un autre exemple de projet, d'application ou de passion.</li>
+                <li><strong>Depuis [Année]</strong> : Maître de conférences à l'Université Aix-Marseille.</li>
+                <li><strong>[Année] - [Année]</strong> : Doctorat ou post-doctorat en Géographie / Biogéographie à [Établissement].</li>
+            </ul>
+            <p>💡 <em>[Optionnel : Vous pouvez ajouter un lien vers un PDF ici, ex: Télécharger mon CV complet]</em></p>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>📚 Publications</h2>
+            <p>Liste sélective de mes articles récents et chapitres d'ouvrages :</p>
+            <ul>
+                <li><strong>Lombard, F.</strong>, et al. ([Année]). Titre de votre article marquant. <em>Nom de la Revue</em>, vol, p. XX-XX.</li>
+                <li><strong>Lombard, F.</strong> ([Année]). Titre d'un autre article ou communication. <em>Nom de la Revue</em>.</li>
             </ul>
         </section>
 
-        <section id="contact">
-            <h2>📩 Contact</h2>
-            <p>Vous pouvez me contacter par e-mail à l'adresse suivante :</p>
-            <p><a href="mailto:votre.email@exemple.com">votre.email (at) exemple.com</a></p>
+        <!-- Enseignements -->
+        <section id="enseignements">
+            <h2>🎓 Enseignements</h2>
+            <p>Mes activités pédagogiques au sein du département de Géographie couvrent principalement :</p>
+            <ul>
+                <li><strong>Licence [1/2/3]</strong> : Introduction à la biogéographie, cartographie et analyse spatiale.</li>
+                <li><strong>Master [Nom du Master]</strong> : Écologie du paysage, outils de télédétection et modélisation systémique.</li>
+            </ul>
         </section>
+
+        <!-- Encadrements -->
+        <section id="encadrements">
+            <h2>👥 Encadrements</h2>
+            <p>Direction et co-encadrement de travaux de recherche d'étudiants :</p>
+            <ul>
+                <li><strong>Masters 2</strong> : Suivis de mémoires sur les thématiques de résilience écologique et de gestion des espaces naturels.</li>
+                <li><strong>Thèses (le cas échéant)</strong> : Co-encadrement de doctorats en cours.</li>
+            </ul>
+        </section>
+
+        <!-- Terrains -->
+        <section id="terrains">
+            <h2>🗺 Terrains de recherche</h2>
+            <div class="highlight-box">
+                <p>Mes chantiers d'étude actuels se déploient principalement dans [indiquez vos zones géographiques majeures, ex: la région méditerranéenne / le Sud-Est de la France]. C'est là que je mène mes campagnes de relevés floristiques et mes séries d'entretiens.</p>
+            </div>
+        </section>
+
     </main>
 
 </body>
 </html>
+
 
