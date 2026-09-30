@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florent Lombard | Terrains</title>
+    <title>Florent Lombard | Accueil</title>
     <style>
-        :root { --text-color: #333333; --link-color: #0066cc; --bg-nav: #f8f9fa; --border-color: #e9ecef; --max-width: 900px; }
+        :root {
+            --text-color: #333333;
+            --link-color: #0066cc;
+            --link-hover: #004499;
+            --bg-nav: #f8f9fa;
+            --border-color: #e9ecef;
+            --max-width: 900px;
+        }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text-color); line-height: 1.6; margin: 0; padding: 0; }
         header { background-color: var(--bg-nav); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
         .nav-container { max-width: var(--max-width); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
@@ -14,10 +21,11 @@
         nav ul li a { text-decoration: none; color: #555; font-weight: 500; padding: 1.2rem 0; display: inline-block; border-bottom: 2px solid transparent; }
         nav ul li a:hover, nav ul li a.active { color: var(--link-color); border-bottom: 2px solid var(--link-color); }
         main { max-width: var(--max-width); margin: 0 auto; padding: 3rem 2rem; box-sizing: border-box; }
-        h2 { font-size: 1.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem; color: #222; }
-        h3 { font-size: 1.2rem; color: #444; margin-top: 1.5rem; }
+        h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #666; margin-top: 0; margin-bottom: 2rem; font-weight: 400; }
         ul { padding-left: 1.2rem; }
         li { margin-bottom: 0.6rem; }
+        .thesis-box { background-color: #fdfdfd; border-left: 3px solid #0066cc; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; }
         @media (max-width: 768px) { .nav-container { flex-direction: column; padding: 1rem; } nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; } }
     </style>
 </head>
@@ -27,30 +35,31 @@
             <a href="index.html" class="site-title">Florent Lombard</a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="enseignements.html">Enseignements</a></li>
                     <li><a href="encadrements.html">Encadrements</a></li>
-                    <li><a href="terrains.html" class="active">Terrains</a></li>
+                    <li><a href="terrains.html">Terrains</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <h2>🗺 Terrains de recherche</h2>
-        <p>Mes travaux et projets de recherche se déploient principalement au sein de deux zones géographiques et biomes d'étude :</p>
-        
-        <h3>Méditerranée</h3>
+        <h1>Florent Lombard</h1>
+        <p class="subtitle">Maître de conférences en Géographie — Université Aix-Marseille</p>
+        <p>Je suis enseignant-chercheur à l'Université Aix-Marseille, rattaché au département de Géographie. Mes travaux s'inscrivent en <strong>biogéographie</strong> et portent plus particulièrement sur le champ théorique de la résilience ainsi que sur l'analyse spatiale des interactions entre nature et sociétés.</p>
+        <p>J'ai soutenu ma thèse de doctorat en 2023, intitulée :</p>
+        <div class="thesis-box">
+            « Dynamique spatio-temporelle de la mangrove du Sénégal : Caractérisation de la résilience des espèces végétales par la modélisation spatiale des processus biologiques. »
+        </div>
+        <p>Pour comprendre la coévolution des liens que les sociétés entretiennent avec leur environnement, ma démarche scientifique croise plusieurs approches méthodologiques :</p>
         <ul>
-            <li><strong>Biome méditerranéen</strong> : Analyse des dynamiques végétales et des interactions nature-sociétés en contexte de pressions anthropiques et climatiques.</li>
-        </ul>
-
-        <h3>Afrique de l'Ouest</h3>
-        <ul>
-            <li><strong>Biome Mangrove (Sénégal)</strong> : Suivi spatio-temporel, modélisation des processus biologiques et caractérisation de la résilience des essences de mangrove face aux usages locaux et aux changements globaux.</li>
+            <li>La modélisation systémique et l'analyse spatiale quantitative.</li>
+            <li>La télédétection et l'écologie du paysage.</li>
+            <li>Les statistiques et les relevés de terrain (principalement botaniques et biophysiques).</li>
+            <li>Les enquêtes de terrain portant sur les usages des acteurs locaux.</li>
         </ul>
     </main>
 </body>
 </html>
-
