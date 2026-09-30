@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florent Lombard | Publications</title>
     <style>
-        :root { --text-color: #333333; --link-color: #0066cc; --bg-nav: #f8f9fa; --border-color: #e9ecef; --max-width: 900px; }
+        :root {
+            --text-color: #333333;
+            --link-color: #0066cc;
+            --link-hover: #004499;
+            --bg-nav: #f8f9fa;
+            --border-color: #e9ecef;
+            --max-width: 900px;
+        }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text-color); line-height: 1.6; margin: 0; padding: 0; }
         header { background-color: var(--bg-nav); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
         .nav-container { max-width: var(--max-width); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
@@ -14,7 +21,11 @@
         nav ul li a { text-decoration: none; color: #555; font-weight: 500; padding: 1.2rem 0; display: inline-block; border-bottom: 2px solid transparent; }
         nav ul li a:hover, nav ul li a.active { color: var(--link-color); border-bottom: 2px solid var(--link-color); }
         main { max-width: var(--max-width); margin: 0 auto; padding: 3rem 2rem; box-sizing: border-box; }
-        h2 { font-size: 1.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem; color: #222; }
+        h2 { font-size: 1.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem; color: #222; margin-top: 2.5rem; }
+        h3 { font-size: 1.3rem; color: #444; margin-top: 2rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem; }
+        .year { font-weight: bold; color: #666; margin-right: 0.5rem; }
         @media (max-width: 768px) { .nav-container { flex-direction: column; padding: 1rem; } nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; } }
     </style>
 </head>
@@ -36,7 +47,18 @@
     </header>
     <main>
         <h2>📚 Publications</h2>
-        <p><em>Cette section recensera prochainement mes articles scientifiques, chapitres d'ouvrages et communications de recherche.</em></p>
+        
+        <h3>📰 Articles dans des revues internationales à comité de lecture</h3>
+        <p>Retrouvez la liste complète des articles scientifiques (2020-2026) portant sur la télédétection, la mangrove et l'analyse spatiale.</p>
+
+        <h3>📢 Communications & Conférences</h3>
+        <p>Retrouvez l'ensemble des communications et contributions à des colloques internationaux (2024-2025).</p>
+
+        <h3>🎓 Thèse de doctorat</h3>
+        <ul>
+            <li><span class="year">2023</span> <strong>Lombard, F.</strong> <em>Dynamique spatio-temporelle de la mangrove du Sénégal...</em> Thèse de doctorat en Géographie, Université Côte d'Azur.</li>
+        </ul>
     </main>
 </body>
 </html>
+
