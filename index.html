@@ -3,89 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio | Bienvenue</title>
+    <title>Florent Lombard | Page personnelle</title>
     <style>
+        :root {
+            --text-color: #333333;
+            --link-color: #0066cc;
+            --link-hover: #004499;
+            --bg-sidebar: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
             line-height: 1.6;
-            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Barre latérale de navigation */
+        nav {
+            width: 250px;
+            background-color: var(--bg-sidebar);
+            height: 100vh;
+            position: fixed;
+            padding: 2rem 1.5rem;
+            box-sizing: border-box;
+            border-right: 1px solid var(--border-color);
+        }
+
+        nav h1 {
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        nav p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: var(--link-color);
+        }
+
+        /* Zone de contenu principal */
+        main {
+            margin-left: 250px;
+            padding: 3rem 4rem;
             max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-            background-color: #fafafa;
         }
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            border-bottom: 1px solid #e1e4e8;
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
         }
-        h1 {
-            color: #24292e;
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--link-hover);
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
             margin-bottom: 0.5rem;
         }
-        .subtitle {
-            font-size: 1.2rem;
-            color: #586069;
-        }
-        section {
-            padding: 2rem 0;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-        .card {
-            background: white;
-            padding: 1.5rem;
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        .card h3 {
-            margin-top: 0;
-            color: #0366d6;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            font-size: 0.9rem;
-            color: #6a737d;
-            border-top: 1px solid #e1e4e8;
-            margin-top: 3rem;
+
+        /* Adaptation pour les écrans de téléphones */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1.5rem;
+            }
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            nav ul li {
+                margin-bottom: 0;
+            }
+            main {
+                margin-left: 0;
+                padding: 2rem 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Mon Nom / Mon Pseudo</h1>
-        <p class="subtitle">Bienvenue sur ma page personnelle hébergée avec GitHub Pages</p>
-    </header>
+    <!-- Menu latéral (Style Pierre Brigode) -->
+    <nav>
+        <h1>Florent Lombard</h1>
+        <p>Votre Profession / Titre</p>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#projets">Projets & Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="a-propos">
-        <h2>À propos de moi</h2>
-        <p>Bonjour ! Je suis passionné par [votre domaine/intérêt]. J'utilise cet espace pour partager mes projets, mes compétences et mes passions avec le monde entier.</p>
-    </section>
+    <!-- Contenu de la page -->
+    <main>
+        <section id="accueil">
+            <h1>Florent Lombard</h1>
+            <h3>Présentation générale</h3>
+            <p>Bienvenue sur ma page personnelle. Je partage ici mes travaux, mes projets et mes centres d'intérêt.</p>
+            <p>Vous pouvez modifier ce texte directement pour vous présenter brièvement au public, à la manière d'une biographie professionnelle.</p>
+        </section>
 
-    <section id="projets">
-        <h2>Mes Projets</h2>
-        <div class="projects">
-            <div class="card">
-                <h3>Projet 1</h3>
-                <p>Description rapide de ce que fait ce projet et des technologies utilisées.</p>
-            </div>
-            <div class="card">
-                <h3>Projet 2</h3>
-                <p>Un autre exemple de réalisation, de site web ou d'application.</p>
-            </div>
-        </div>
-    </section>
+        <section id="parcours">
+            <h2>💼 Mon Parcours</h2>
+            <p>Voici un résumé de mes activités majeures :</p>
+            <ul>
+                <li><strong>Poste actuel (2026)</strong> : Description de votre rôle ou de vos études actuelles.</li>
+                <li><strong>Expérience précédente</strong> : Entreprise ou École, détails de votre mission.</li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>&copy; 2026 - Propulsé avec style par GitHub Pages</p>
-    </footer>
+        <section id="projets">
+            <h2>🚀 Projets & Réalisations</h2>
+            <p>Mes travaux portent principalement sur :</p>
+            <ul>
+                <li><strong>Domaine 1</strong> : Explication rapide de vos compétences ou réalisations liées.</li>
+                <li><strong>Domaine 2</strong> : Un autre exemple de projet, d'application ou de passion.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>📩 Contact</h2>
+            <p>Vous pouvez me contacter par e-mail à l'adresse suivante :</p>
+            <p><a href="mailto:votre.email@exemple.com">votre.email (at) exemple.com</a></p>
+        </section>
+    </main>
 
 </body>
 </html>
+
