@@ -22,7 +22,7 @@
             padding: 0;
         }
 
-        /* Barre de navigation supérieure */
+        /* Barre d'onglets supérieure */
         header {
             background-color: var(--bg-nav);
             border-bottom: 1px solid var(--border-color);
@@ -70,7 +70,7 @@
             border-bottom: 2px solid var(--link-color);
         }
 
-        /* Contenu principal */
+        /* Contenu de la page */
         main {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -79,8 +79,8 @@
         }
 
         section {
-            scroll-margin-top: 5rem; /* Évite que le menu cache le titre lors du clic */
-            margin-bottom: 3.5rem;
+            scroll-margin-top: 5rem; /* Évite le masquage par le menu fixe */
+            margin-bottom: 5rem;
         }
 
         h1 {
@@ -104,6 +104,12 @@
             color: #222;
         }
 
+        h3 {
+            font-size: 1.2rem;
+            color: #444;
+            margin-top: 1.5rem;
+        }
+
         a {
             color: var(--link-color);
             text-decoration: none;
@@ -122,11 +128,12 @@
             margin-bottom: 0.6rem;
         }
 
-        .highlight-box {
+        .thesis-box {
             background-color: #fdfdfd;
-            border-left: 3px solid #6c757d;
+            border-left: 3px solid #0066cc;
             padding: 1rem 1.5rem;
             margin: 1.5rem 0;
+            font-style: italic;
         }
 
         /* Responsive */
@@ -177,13 +184,19 @@
             <h1>Florent Lombard</h1>
             <p class="subtitle">Maître de conférences en Géographie — Université Aix-Marseille</p>
             
-            <p>Je suis enseignant-chercheur à l'Université Aix-Marseille. Mes travaux s'inscrivent en <strong>biogéographie</strong> et portent plus particulièrement sur le concept de résilience ainsi que sur l'analyse spatiale des interactions entre nature et sociétés.</p>
+            <p>Je suis enseignant-chercheur à l'Université Aix-Marseille, rattaché au département de Géographie. Mes travaux s'inscrivent en <strong>biogéographie</strong> et portent plus particulièrement sur le champ théorique de la résilience ainsi que sur l'analyse spatiale des interactions entre nature et sociétés.</p>
             
-            <p>Pour comprendre la coévolution des liens que les sociétés entretiennent avec leur environnement, ma démarche s'appuie sur le croisement de plusieurs méthodes :</p>
+            <p>J'ai soutenu ma thèse de doctorat en 2023, intitulée :</p>
+            <div class="thesis-box">
+                « Dynamique spatio-temporelle de la mangrove du Sénégal : Caractérisation de la résilience des espèces végétales par la modélisation spatiale des processus biologiques. »
+            </div>
+
+            <p>Pour comprendre la coévolution des liens que les sociétés entretiennent avec leur environnement, ma démarche scientifique croise plusieurs approches méthodologiques :</p>
             <ul>
                 <li>La modélisation systémique et l'analyse spatiale quantitative.</li>
-                <li>La télédétection et l'écologie du paysage pour le suivi des dynamiques végétales.</li>
-                <li>Le travail empirique, combinant relevés de terrain (botaniques et biophysiques) et enquêtes de terrain portant sur les usages des acteurs locaux.</li>
+                <li>La télédétection et l'écologie du paysage.</li>
+                <li>Les statistiques et les relevés de terrain (principalement botaniques et biophysiques).</li>
+                <li>Les enquêtes de terrain portant sur les usages des acteurs locaux.</li>
             </ul>
         </section>
 
@@ -192,52 +205,47 @@
             <h2>💼 Parcours & CV</h2>
             <ul>
                 <li><strong>Depuis [Année]</strong> : Maître de conférences à l'Université Aix-Marseille.</li>
-                <li><strong>[Année] - [Année]</strong> : Doctorat ou post-doctorat en Géographie / Biogéographie à [Établissement].</li>
+                <li><strong>2023</strong> : Doctorat en Géographie — *Dynamique spatio-temporelle de la mangrove du Sénégal*.</li>
             </ul>
-            <p>💡 <em>[Optionnel : Vous pouvez ajouter un lien vers un PDF ici, ex: Télécharger mon CV complet]</em></p>
         </section>
 
         <!-- Publications -->
         <section id="publications">
             <h2>📚 Publications</h2>
-            <p>Liste sélective de mes articles récents et chapitres d'ouvrages :</p>
-            <ul>
-                <li><strong>Lombard, F.</strong>, et al. ([Année]). Titre de votre article marquant. <em>Nom de la Revue</em>, vol, p. XX-XX.</li>
-                <li><strong>Lombard, F.</strong> ([Année]). Titre d'un autre article ou communication. <em>Nom de la Revue</em>.</li>
-            </ul>
+            <p><em>Cette section recensera prochainement mes articles scientifiques, chapitres d'ouvrages et communications de recherche.</em></p>
+            <!-- Vous pourrez insérer vos puces <li> ici plus tard -->
         </section>
 
         <!-- Enseignements -->
         <section id="enseignements">
             <h2>🎓 Enseignements</h2>
-            <p>Mes activités pédagogiques au sein du département de Géographie couvrent principalement :</p>
-            <ul>
-                <li><strong>Licence [1/2/3]</strong> : Introduction à la biogéographie, cartographie et analyse spatiale.</li>
-                <li><strong>Master [Nom du Master]</strong> : Écologie du paysage, outils de télédétection et modélisation systémique.</li>
-            </ul>
+            <p><em>Les détails de mes cours et charges d'enseignement (Licence et Master) seront partagés ici prochainement.</em></p>
         </section>
 
         <!-- Encadrements -->
         <section id="encadrements">
             <h2>👥 Encadrements</h2>
-            <p>Direction et co-encadrement de travaux de recherche d'étudiants :</p>
-            <ul>
-                <li><strong>Masters 2</strong> : Suivis de mémoires sur les thématiques de résilience écologique et de gestion des espaces naturels.</li>
-                <li><strong>Thèses (le cas échéant)</strong> : Co-encadrement de doctorats en cours.</li>
-            </ul>
+            <p>Encadrement et suivi de travaux de recherche d'étudiants (Mémoires de Master).</p>
         </section>
 
         <!-- Terrains -->
         <section id="terrains">
             <h2>🗺 Terrains de recherche</h2>
-            <div class="highlight-box">
-                <p>Mes chantiers d'étude actuels se déploient principalement dans [indiquez vos zones géographiques majeures, ex: la région méditerranéenne / le Sud-Est de la France]. C'est là que je mène mes campagnes de relevés floristiques et mes séries d'entretiens.</p>
-            </div>
+            <p>Mes travaux et projets de recherche se déploient principalement au sein de deux zones géographiques et biomes d'étude :</p>
+            
+            <h3>Médiérranée</h3>
+            <ul>
+                <li><strong>Biome méditerranéen</strong> : Analyse des dynamiques végétales et des interactions nature-sociétés en contexte de pressions anthropiques et climatiques.</li>
+            </ul>
+
+            <h3>Afrique de l'Ouest</h3>
+            <ul>
+                <li><strong>Biome Mangrove (Sénégal)</strong> : Suivi spatio-temporel, modélisation des processus biologiques et caractérisation de la résilience des essences de mangrove face aux usages locaux et aux changements globaux.</li>
+            </ul>
         </section>
 
     </main>
 
 </body>
 </html>
-
 
