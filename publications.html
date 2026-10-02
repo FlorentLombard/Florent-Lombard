@@ -27,6 +27,13 @@
         li { margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem; }
         .year { font-weight: bold; color: #666; margin-right: 0.5rem; }
         @media (max-width: 768px) { .nav-container { flex-direction: column; padding: 1rem; } nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; } }
+
+        main h1 { font-size: 2.3rem; margin: 0 0 1rem; }
+        main h3 { text-transform: none; letter-spacing: normal; }
+        main a { color: var(--link-color); text-underline-offset: 0.15em; }
+        header li { padding-left: 0; text-indent: 0; margin-bottom: 0; }
+        [id] { scroll-margin-top: 6rem; }
+        @media (max-width: 768px) { main { padding: 2rem 1rem; } main li { padding-left: 0; text-indent: 0; } }
     </style>
 </head>
 <body>
@@ -46,18 +53,46 @@
         </div>
     </header>
     <main>
-        <h2>📚 Publications</h2>
-        
-        <h3>📰 Articles dans des revues internationales à comité de lecture</h3>
-        <p>Retrouvez la liste complète des articles scientifiques (2020-2026) portant sur la télédétection, la mangrove et l'analyse spatiale.</p>
+        <h1>Publications</h1>
+        <section aria-labelledby="publications">
+            <h2 id="publications">Publications scientifiques</h2>
+            <h3>Articles dans des revues à comité de lecture</h3>
+            <ul class="bibliographie">
+                <li>Andrieu, J., Anupama, K., Bautes, N., Benabou, S., Crook, O. J., Gunasekera, V., Jayasingam, T., Jayathilaka, C., Kodikara, K., <strong>Lombard, F.</strong>, et al. (2023). Multiscale analysis of land use and land cover changes in Sri Lanka by remote sensing: the impacts of post-war infrastructure development in the last 20 Years (2002–2022). <em>Journal of the National Science Foundation of Sri Lanka</em>, 51(4). <a href="https://doi.org/10.4038/jnsfsr.v51i4.11548">DOI</a>.</li>
+                <li><strong>Lombard, F.</strong>, Soumaré, S., Andrieu, J., et Josselin, D. (2023). Mangrove Zonation Mapping in West Africa, at 10-m Resolution, Optimized for Inter-Annual Monitoring. <em>Ecological Informatics</em>, 75, 102027. <a href="https://doi.org/10.1016/j.ecoinf.2023.102027">DOI</a>.</li>
+                <li><strong>Lombard, F.</strong>, et Andrieu, J. (2021). Mapping Mangrove Zonation Changes in Senegal with Landsat Imagery Using an OBIA Approach Combined with Linear Spectral Unmixing. <em>Remote Sensing</em>, 13(10), 1961. <a href="https://doi.org/10.3390/rs13101961">DOI</a>.</li>
+                <li><strong>Lombard, F.</strong>, Andrieu, J., et Descroix, L. (2021). La population d’<em>Avicennia germinans</em> du delta du Saloum est-elle relictuelle depuis la dernière période humide ? <em>Bois et Forêts des Tropiques</em>, p. 51–64. <a href="https://doi.org/10.19182/bft2020.346.a36296">DOI</a>.</li>
+                <li>Andrieu, J., <strong>Lombard, F.</strong>, Vignal, M., Godron, M., et Alexandre, F. (2020). A phyto-climatic transect in the Alpes Maritimes used to characterize the northern limit of the Mediterranean biogeographical area. <em>Biodiversity Journal</em>, 11(3), p. 679–688. <a href="https://doi.org/10.31396/Biodiv.Jour.2020.11.3.679-688">DOI</a>.</li>
+                <li>Andrieu, J., <strong>Lombard, F.</strong>, Fall, A., Thior, M., Ba, B. D., et al. (2020). Botanical fieldstudy and remote sensing to describe mangrove resilience in the Saloum Delta (Senegal) after 30 years of degradation narrative. <em>Forest Ecology and Management</em>, 461, 117963. <a href="https://doi.org/10.1016/j.foreco.2020.117963">DOI</a>.</li>
+            </ul>
+            <h3>Acte de colloque avec comité de lecture</h3>
+            <p><strong>Lombard, F.</strong> (2019). Étude de la résilience de la mangrove du delta du Saloum : regard botanique sur l’évolution des surfaces et les processus de la régénération. <em>Vulnérabilité des sociétés et des milieux côtiers et estuariens d’Afrique de l’Ouest</em>, Ziguinchor, Sénégal, 19–22 novembre 2019, p. 595–611.</p>
+            </section>
+        <section aria-labelledby="communications">
+            <h2 id="communications">Communications scientifiques</h2>
+            <h3>Colloques internationaux</h3>
+            <ul>
+                <li><strong>2025 :</strong> Lombard, F. Modélisation spatio-temporelle des caractéristiques physionomiques et floristiques de la mangrove du Sénégal de 1999 à 2022 à partir de données satellitaires multi-capteurs. TAMAO, Thiès, Sénégal, décembre.</li>
+                <li><strong>2025 :</strong> Chapuis, M., Adnès, C., Banitalebi Dehkordi, M., Fox, D., Lombard, F. Rivers facing change in Alpine and Mediterranean climate: a geomorphic point of view. <em>Lezioni apprese nell’integrazione delle traiettorie idromorfologiche per la gestione delle risorse idriche nei fiumi alpini</em>, Università di Trento, Belluno, Italie, juin.</li>
+                <li><strong>2019 :</strong> Lombard, F. Étude de la résilience de la mangrove du delta du Saloum : regard botanique sur l’évolution des surfaces et les processus de la régénération. <em>Vulnérabilité des sociétés et des milieux côtiers et estuariens d’Afrique de l’Ouest</em>, Ziguinchor, Sénégal, 19–22 novembre.</li>
+            </ul>
+            <h3>Colloques nationaux</h3>
+            <ul>
+                <li><strong>2025 :</strong> Lombard, F., Emsellem, K., Bouissou, S. Identification des terrasses dans la vallée de la Roya : analyse spatiale des motifs paysagers à partir de données LiDAR. SAGEO, Avignon, mai.</li>
+                <li><strong>2024 :</strong> Lombard, F., Andrieu, J. Caractérisation des fenêtres d’opportunités pour la colonisation de la mangrove noire (<em>Avicennia germinans</em>) dans les estuaires inversés sénégalais à travers une modélisation spatio-temporelle de la salinité et des observations botaniques in situ. VIIIe colloque de l’AFGP, <em>Approches géographiques face aux changements climatiques</em>, Avignon, 25–27 janvier.</li>
+                <li><strong>2021 :</strong> Lombard, F., Andrieu, J. La lacune de régénération d’<em>Avicennia germinans</em> dans la mangrove du delta du Saloum : un déphasage phénologique durable depuis la dernière période humide ? <em>D’arbres et d’eaux : géohistoire des forêts et zones humides littorales, mobilité et hybridité</em>, Nantes, 2–4 septembre.</li>
+            </ul>
+            <h3>Journées scientifiques interdisciplinaires</h3>
+            <ul>
+                <li><strong>2023 :</strong> Lombard, F. Classification des dynamiques de la couverture terrestre : explorer l’effet de la variabilité temporelle dans la réponse des écosystèmes aux changements environnementaux. <em>Intelligence Artificielle en SHS : nouveaux outils, nouvelles approches, nouveaux objets ?</em>, journées scientifiques EUR ODYSSEE, Nice, Université Côte d’Azur.</li>
+                <li><strong>2021 :</strong> Lombard, F. La population d’<em>Avicennia germinans</em> de la mangrove du delta du Saloum est-elle relictuelle depuis la dernière période humide ? <em>Du disciplinaire à l’interdisciplinaire. Un « tournant environnemental » des sciences humaines et sociales ?</em>, journées scientifiques EUR ODYSSEE, Nice, 27–28 mai.</li>
+            </ul>
 
-        <h3>📢 Communications & Conférences</h3>
-        <p>Retrouvez l'ensemble des communications et contributions à des colloques internationaux (2024-2025).</p>
-
-        <h3>🎓 Thèse de doctorat</h3>
-        <ul>
-            <li><span class="year">2023</span> <strong>Lombard, F.</strong> <em>Dynamique spatio-temporelle de la mangrove du Sénégal...</em> Thèse de doctorat en Géographie, Université Côte d'Azur.</li>
-        </ul>
+        </section>
+        <section aria-labelledby="these">
+            <h2 id="these">Thèse de doctorat</h2>
+            <p><strong>Lombard, F.</strong> (2023). <em>Dynamique spatio-temporelle de la mangrove du Sénégal : caractérisation de la résilience des espèces végétales par la modélisation spatiale des processus biologiques.</em> Thèse de doctorat en géographie, Université Côte d’Azur. Direction : Julien Andrieu. Soutenance le 20 décembre 2023.</p>
+        </section>
     </main>
 </body>
 </html>
